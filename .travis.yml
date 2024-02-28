@@ -3,6 +3,8 @@ python:
   - "3.7"  # Or any version you're using
 install:
   - pip install -r mysite/requirements.txt
+script:
+  - python mysite/manage.py test
 
 deploy:
   provider: elasticbeanstalk
