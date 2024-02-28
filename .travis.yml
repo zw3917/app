@@ -4,7 +4,6 @@ python:
 install:
   - pip install -r mysite/requirements.txt
   - pip install coverage
-  - pip install codecov
   - pip install coveralls
 
 before_script:
@@ -17,7 +16,6 @@ script:
 
 after_script:
   - coveralls
-  - codecov
 
 deploy:
   provider: elasticbeanstalk
