@@ -14,4 +14,3 @@ deploy:
   app: "test3"
   env: "test-env3"
   bucket_name: "the-target-S3-bucket"
-YAML
