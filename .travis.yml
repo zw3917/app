@@ -5,16 +5,3 @@ install:
   - pip install -r mysite/requirements.txt
 script:
   - python mysite/manage.py test
-
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: "AKIA5FTZAJ64XCA6D2CH"
-  secret_access_key:
-    secure: "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"
-  region: "us-west-2"
-  app: "test3"
-  env: "test-env3"
-  bucket_name: "the-target-S3-bucket"
-  on:
-    branch: main
