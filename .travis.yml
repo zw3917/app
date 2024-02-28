@@ -1,9 +1,11 @@
 language: python
 python:
-  - "3.7"  # Or any version you're using
+  - "3.8"  # Or any version you're using
 install:
   - pip install -r mysite/requirements.txt
   - pip install coverage
+  - pip install codecov
+  - pip install coveralls
 
 before_script:
   - python mysite/manage.py migrate
@@ -15,6 +17,7 @@ script:
 
 after_script:
   - coveralls
+  - codecov
 
 deploy:
   provider: elasticbeanstalk
