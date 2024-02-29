@@ -7,6 +7,7 @@ before_install:
   - sudo apt-get install openssl libssl-dev
 
 install:
+  - pip install urllib3==1.26.6
   - pip install -r mysite/requirements.txt
   - pip install coverage
   - pip install coveralls
