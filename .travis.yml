@@ -1,6 +1,11 @@
 language: python
 python:
   - "3.8"  # Or any version you're using
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install openssl libssl-dev
+
 install:
   - pip install -r mysite/requirements.txt
   - pip install coverage
