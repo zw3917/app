@@ -30,8 +30,8 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-west-2"
-  app: "test3"
-  env: "test-env3"
-  bucket_name: "the-target-S3-bucket"
+  app: "app3"
+  env: "travis-env5"
+  bucket_name: "elasticbeanstalk-us-west-2-905418133433"
   on:
     branch: main
