@@ -18,7 +18,7 @@ install:
 
 before_script:
   - python mysite/manage.py migrate
-  - - python mysite/manage.py collectstatic --noinput
+  - python mysite/manage.py collectstatic --noinput
 script:
   - black --check .
   - flake8 .
