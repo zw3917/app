@@ -36,5 +36,5 @@ deploy:
   env: "travis-env5"
   bucket_name: "elasticbeanstalk-us-west-2-905418133433"
   on:
-    repo: "zw3917/swe1-app"
+    repo: "zw3917/swe1-app/mysite"
     branch: main
