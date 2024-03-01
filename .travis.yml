@@ -27,14 +27,16 @@ script:
 after_script:
   - coveralls
 
+before_deploy:
+  - zip -r deploy.zip mysite
 deploy:
   provider: elasticbeanstalk
+  zip_file: deploy.zip
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-west-2"
   app: "app3"
-  env: "travis-env5"
+  env: "travis-env8"
   bucket_name: "elasticbeanstalk-us-west-2-905418133433"
   on:
-    repo: "zw3917/swe1-app"
     branch: main
