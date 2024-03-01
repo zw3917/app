@@ -22,7 +22,7 @@ before_script:
 script:
   - black --check .
   - flake8 .
-  - coverage run --source=mysite/app,mysite/polls mysite/manage.py test
+  - coverage run --source=mysite mysite/manage.py test
 
 after_script:
   - coveralls
