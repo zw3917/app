@@ -15,7 +15,7 @@ install:
   - pip install flake8==7.0.0
   - pip install flake8-bugbear==24.2.6
   - pip install pyyaml
-  - pip install zip
+  
 before_script:
   - python mysite/manage.py migrate
   - python mysite/manage.py collectstatic --noinput
@@ -30,7 +30,7 @@ after_script:
 before_deploy:
   - cd $TRAVIS_BUILD_DIR
   - zip -r deploy.zip mysite
-  
+
 deploy:
   provider: elasticbeanstalk
   zip_file: deploy.zip
