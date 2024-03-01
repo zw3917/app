@@ -25,6 +25,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "travis-env5.eba-fdbgppaq.us-west-2.elasticbeanstalk.com",
     "172.31.15.36",
+    '*',
 ]
 
 # Application definition
